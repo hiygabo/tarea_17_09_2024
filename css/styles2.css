@@ -1,0 +1,108 @@
+.contenedor{
+    background-color: rgb(238, 198, 190);
+    padding: 10px;
+    font-size: larger;
+    display: grid;
+    grid-gap: 20px;
+    /*grid-template-columns: repeat(8,1fr) ;*/
+    /*grid-template-rows: repeat (3, 200px);*/
+    /*grid-template-columns: minmax(5fr,1fr) 2fr;*/
+   /* grid-template-rows: 100px 1fr 6fr 1fr;*/
+    /*grid-template-rows: 150px 250px;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    grid-template-areas: "header header      header"
+                         "side1  main  side2"
+                         "footer  footer     footer" ;
+    text-align: center;
+}
+.contenedor>div{
+    background-color: #F3BDB1;
+}
+
+.contenedor > .header{
+    grid-column-start: header;
+    grid-column-end: header;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+.contenedor > .side1{
+    grid-column: side1;
+    display: grid;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    
+
+    
+}
+
+.contenedor > .side1 > .uno{
+    background-color: bisque;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 150px;
+    margin: 10px;
+}
+.contenedor > .side1 > .dos{
+    background-color: bisque;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    height: 150px;
+    margin: 10px;
+    
+}
+
+.contenedor > .main{
+    grid-column: main;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 5fr;
+
+}
+.contenedor > .main > .u{
+    background-color: bisque;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+
+}
+.contenedor > .main > .d{
+    background-color: bisque;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+
+}
+.contenedor > .main > .t{
+    background-color: bisque;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 10px;
+
+}
+.contenedor > .side2{
+    grid-column: side2;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+.contenedor .footer{
+    grid-column: footer;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
